@@ -12,7 +12,7 @@ const App = () => {
   const getWeather = async () => {
     try {
       const { data } = await axios(
-        `http://api.weatherstack.com/current?access_key=${process.env.REACT_APP_WEATHERSTACK_ACCESS_KEY}&query=${city}`
+        `http://api.weatherstack.com/current?access_key=7958c117eedea9cdca7b0aeba0b90a15&query=${city}`
       );
       setWeather(data);
     } catch (error) {
